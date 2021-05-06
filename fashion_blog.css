@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+html {
+    background-image: url(./c4c6f6e37ea0419b53b3772febaf3c1c.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+* {
+    text-align: center;
+    font-size: 20px;
+    font-family: Itim, sans-serif;
+    line-height: 35px;
+    
+}
+
+img {
+    margin: 50px;
+    border: 2px solid white;
+}
+
+h3 {
+    margin-top: -35px;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    word-spacing: 0.2em;
+    color: #0A22D4;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 30px;
+    color: #EB4872;
+}
+
+p {
+    margin: 10px;
+    font-size: 30px;
+    color: #F2A0E4;
+}
+
+a {
+    font-size: 35px;
+    color: #E501E6;
+    cursor: pointer;
+}
+
+#contact {
+    background-color: grey;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+
+}
+
+#intro {
+    color: #2A27E8;
+}
+
+#tickets {
+    color: #A6A2F5;
+}
+
+#budget {
+    color: #B1E4F2;
+}
+
+h4 {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    color: #9F99F2;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 50px;
+    color: #E5B0F2;
+    font-size: 30px;
+}
