@@ -1,0 +1,58 @@
+function getUserChoice(userInput) {
+  userInput = userInput.toLowerCase()
+  if (userInput === 'pierre' || userInput === 'papier' || userInput === 'ciseaux' || userInput === 'puit') {
+    return userInput
+  } else {
+    console.log('Erreur, choisissez pierre, papier ou ciseaux.')
+  }
+}
+const getComputerChoice = () => {
+  const randomNumber = Math.floor(Math.random() * 3)
+  switch(randomNumber){
+    case 0:
+      return 'pierre'
+    case 1:
+      return 'papier'
+    case 2:
+      return 'ciseaux'
+  }
+}
+const determineWinner = (userChoice, computerChoice) => {
+if(userChoice === 'puit'){
+  return "Oh non! L'arme secrète! Je suis vaincu!"
+}
+if(userChoice === computerChoice){
+  return 'Match nul!'
+}
+if(userChoice === 'pierre'){
+  if(computerChoice === 'papier'){
+    return "Dommage. L'ordinateur a gagné."
+  } else {
+    return 'Bravo! Vous avez gagné!'
+  }
+  }
+  if(userChoice === 'paper'){
+    if(computerChoice === 'scissors'){
+      return "Dommage. L'ordinateur a gagné."
+    } else {
+      return 'Bravo! Vous avez gagné!'
+  }
+  }
+  if(userChoice === 'scissors'){
+    if(computerChoice === 'rock'){
+      return "Dommage. L'ordinateur a gagné."
+    } else {
+      return 'Bravo! Vous avez gagné!'
+    }
+  }
+}
+
+const playGame = () => {
+  const userChoice = getUserChoice('pierre')
+  const computerChoice = getComputerChoice()
+console.log('Vous jouez: ' + userChoice)
+console.log("L'ordinateur joue: " + computerChoice)
+console.log(determineWinner(userChoice, computerChoice))
+}
+
+playGame()
