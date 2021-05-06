@@ -1,0 +1,45 @@
+const userName = ''
+if(userName){
+    console.log('Bonjour ' + userName + '!')
+}else{
+    console.log('Bonjour!')
+}
+const userQuestion = ''
+if(userName, userQuestion){
+  console.log(userName + ' a demandé : ' + userQuestion)
+} else if(userQuestion){
+  console.log('Vous avez demandé : ' + userQuestion)
+} else {
+  console.log('Et ben? Tu la poses ta question?')
+  return
+}
+
+const randomNumber = Math.floor(Math.random() * 8)
+let eightBall = ''
+switch(randomNumber){
+  case 0 :
+    eightBall = 'Certainement!'
+    break
+  case 1 :
+    eightBall = "C'est fort possible!"
+    break
+  case 2 :
+    eightBall = 'La flemme, revenez plus tard...'
+    break
+  case 3 :
+    eightBall = 'Ma boule de cristal est en panne.'
+    break
+  case 4 :
+    eightBall = 'Ne comptez pas là-dessus'
+    break
+  case 5 :
+    eightBall = "Mes sources m'indiquent que non"
+    break
+  case 6 :
+    eightBall = "Le destin n'est pas favorable"
+    break
+  case 7 :
+    eightBall = 'Les signes indiquent que oui'
+    break
+}
+console.log("L'Oracle répond : " + eightBall)
