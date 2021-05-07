@@ -48,7 +48,7 @@ if(userChoice === 'pierre'){
 }
 
 const playGame = () => {
-  const userChoice = getUserChoice('pierre')
+  const userChoice = getUserChoice(userInput)
   const computerChoice = getComputerChoice()
 console.log('Vous jouez: ' + userChoice)
 console.log("L'ordinateur joue: " + computerChoice)
