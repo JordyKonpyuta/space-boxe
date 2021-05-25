@@ -3,6 +3,7 @@
 int main() {
 
   // Déclaration des variables
+  
   int choix1 = 0;
   int choix2a = 0;
   int choix3a = 0;
@@ -12,10 +13,12 @@ int main() {
   int choix4b = 0;
 
   // Introduction
+  
   std::cout << "Vous êtes un lycéen japonais du nom de Kazuo Chiheisen. Vous avez une petite soeur, Mayu. Tous les deux, vous n'êtes pas doués en cours, vous êtes antisocials, et vos parents vous ont lâchés à cause de ça.\n";
   std::cout << "Un jour, alors que vous étiez sur le point de rentrer chez vous, vous apercevez une porte qui n'était pas là avant. Quelque chose de bizarre s'en dégage.\n\n";
 
   // Choix 1
+  
   for (int i = 0; i < 3 && choix1 != 1 && choix1 != 2 && choix1 != 3; i++ ) {
   std::cout << "Que faites-vous?\n";
   std::cout << "1) Vous l'ouvrez pour savoir ce qu'il y a derrière\n";
@@ -26,6 +29,7 @@ int main() {
   }
 
   // Embranchement A
+  
   if (choix1 == 1) {
     std::cout << "Intrigué, vous approchez doucement de la porte, saisissez la poignée et l'ouvrez, pour tomber nez à nez avec un précipice qui semble sans fond. Vous essayez de vous accrocher à la poignée pour ne pas tomber, mais celle-ci cède sous votre poids, vous emportant avec elle dans les abysses. Après une chute qui semblait durer une éternité, vous atterrissez sur les fesses. Après vous être remis de la douleur, vous regardez autours de vous. Vous êtes dans ce qui ressemble à une plaine, traversée par un chemin de pierre. Les pierres sont un peu bizarres, mais à part ça tout à l'air normal...\n";
     std::cout << "Tout d'un coup, un petit robot bleu apparaît devant vous. Après un bref coup d'oeil, il saute de joie, vous prend sous son bras et vous emmène avec lui, avant que vous ayez le temps de comprendre quoi que ce soit. Vous regardez au-dessus de l'épaule du robot, et vous vous rendez compte qu'il vous emmène dans une ville futuriste, remplie de buildings de verre. Pas de doute, vous êtes dans une dimension parrallèle. Le robot se précipita vers la tour au centre de la ville et y entra. Il se rend dans une salle remplie d'autres robots de toutes les couleurs, et vous balance devant eux.\n\n";
@@ -42,6 +46,8 @@ int main() {
     std::cin >> choix2a;
     }
 
+    // Choix 2 : réponse 1
+    
     if (choix2a == 1) {
       std::cout << "Vous hochez la tête. Tous les robots devant vous écarquillent les yeux au maximum, pendant que le robot bleu saute de joie. Vous n'avez même pas le temps de rire de leur réaction que le robot bleu vous saisit et vous emmène tout en haut de la tour. Une fois en haut, il vous balance sur le sol. En levant les yeux, vous vous rendez compte que vous êtes maintenant dans une sorte d'armurerie, et que plusieurs combinaisons bleues futuristes sont accrochées sur le mur devant vous, avec leurs armes assorties.\n\n";
       std::cout << "Allez-y, faites votre choix! - dis le robot bleu en pointant les équipements devant vous.\n\n";
@@ -57,6 +63,8 @@ int main() {
       std::cin >> choix3a;
       }
 
+      // Choix 3 : réponse 1
+      
       if (choix3a == 1) {
         std::cout << "Sans hésiter, vous vous saisissez du gros pistolet. Piou! Piou!\n\n";
         std::cout << "Le robot bleu vous tire par le bras pour vous emmener vers une fenêtre. Il vous pointe du doigt la colline loin derrière la ville. En regardant plus attentivement, vous vous rendez compte qu'une armée de machines toutes noires se dirigent vers vous!\n\n";
@@ -76,6 +84,8 @@ int main() {
         std::cin >> choix4a;
         }
 
+        // Choix 4 : réponse 1
+        
         if (choix4a == 1) {
           std::cout << "Ne voulant pas gaspiller des balles sur un ennemi à terre, vous décidez de l'épargner. Alors que vous emboîtez le pas pour retourner dans la ville et annoncer votre victoire, vous sentez quelque chose vous transpercer le torse. En baissant les yeux, vous vous rendez compte que c'est une lame toute noire, de la même couleur que le robot.\n\n";
           std::cout << "Et merde...\n\n";
@@ -84,6 +94,8 @@ int main() {
           std::cout << "FIN 4: Ne jamais épargner ses ennemis...\n";
           return 0;
 
+          // Choix 4 : réponse 2
+          
         } else if (choix4a == 2) {
           std::cout << "Vous le fixez un moment, sans bouger. Pensant que vous avez changé d'avis, le robot commence à se lever doucement, en reprenant confiance petit à petit. Soudain, vous plaquez votre arme contre son poitrail et lui tirez un laser en plein 'coeur'. A peine a-t-il compris son erreur que le robot explose en plusieurs milliers de confettis. Après avoir un peu profité de la pluie de confettis, vous attachez votre bazooka dans votre dos et retournez fiérement dans la ville. Là-bas, vous êtes accueilli comme un héro. Les robots vous soulèvent comme un entraîneur d'équipe de foot qui vient de gagner un match, et vous balade comme ça dans toute la ville, en vous arrosant de serpentins et de ce qui ressemble à du champagne.\n\n";
           std::cout << "Les robots vous conduisent dans une salle de la tour principale, où se trouve quelque chose qui ressemble à un téléporteur. Ils vous posent et se réunissent tous devant vous.\n\n";
@@ -94,6 +106,9 @@ int main() {
           std::cout << "FIN 5.5: Piou piou!\n";
           return 0;
         }
+        
+        // Choix 3, réponse 2
+        
       } else if (choix3a == 2) {
         std::cout << "Vous prenez l'épée. Vos heures de jeu sur Beat Saber vont enfin vous servir à quelque chose.\n\n";
         std::cout << "Le robot bleu vous tire par le bras pour vous emmener vers une fenêtre. Il vous pointe du doigt la colline loin derrière la ville. En regardant plus attentivement, vous vous rendez compte qu'une armée de machines toutes noires se dirigent vers vous!\n\n";
@@ -113,6 +128,8 @@ int main() {
         std::cin >> choix4a;
         }
 
+        // Choix 4 : réponse 1
+        
         if (choix4a == 1) {
           std::cout << "Votre code de l'honneur vous dictant de ne pas frapper un ennemi à terre - et parce qu'il fait quand même sacrément pitié - vous décidez de l'épargner. Alors que vous emboîtez le pas pour retourner dans la ville et annoncer votre victoire, vous sentez quelque chose vous transpercer le torse. En baissant les yeux, vous vous rendez compte que c'est une lame toute noire, de la même couleur que le robot.\n\n";
           std::cout << "Et merde...\n\n";
@@ -121,6 +138,8 @@ int main() {
           std::cout << "FIN 4: Ne jamais épargner ses ennemis...\n";
           return 0;
 
+          // Choix 4 : réponse 2
+          
         } else if (choix4a == 2) {
           std::cout << "Vous le fixez un moment, sans bouger. Pensant que vous avez changé d'avis, le robot commence à se lever doucement, en reprenant confiance petit à petit. Soudain, vous lui portez un coup en plein 'coeur'. A peine a-t-il compris son erreur que le robot explose en plusieurs milliers de confettis. Après avoir un peu profité de la pluie de confettis, vous rangez votre épée et retournez fiérement dans la ville. Là-bas, vous êtes accueilli comme un héro. Les robots vous soulèvent comme un entraîneur d'équipe de foot qui vient de gagner un match, et vous balade comme ça dans toute la ville, en vous arrosant de serpentins et de ce qui ressemble à du champagne.\n\n";
           std::cout << "Les robots vous conduisent dans une salle de la tour principale, où se trouve quelque chose qui ressemble à un téléporteur. Ils vous posent et se réunissent tous devant vous.\n\n";
@@ -132,6 +151,8 @@ int main() {
           return 0;
         }
 
+        // Choix 3 : réponse 3
+        
       }  else if (choix3a == 3) {
         std::cout << "Vous décrochez le bâton du mur. ça peut être marrant de jeter des sorts.\n\n";
         std::cout << "Le robot bleu vous tire par le bras pour vous emmener vers une fenêtre. Il vous pointe du doigt la colline loin derrière la ville. En regardant plus attentivement, vous vous rendez compte qu'une armée de machines toutes noires se dirigent vers vous!\n\n";
@@ -145,6 +166,9 @@ int main() {
       } else {
         std::cout << "L'histoire n'avançera pas si vous ne vous décidez pas. Faites votre choix.\n";
       }
+      
+      // Choix 2 : réponse 2
+      
     } else if (choix2a == 2) {
       std::cout << "Après avoir jeté un regard sur tous les robots, vous leur lançez un froid et direct 'Non'. Ils soupirent tous. L'un d'eux se tourna vers le robot bleu.\n\n";
       std::cout << "Tu fais chier, hein! A chaque fois c'est pareil! Tu nous ramène un gars en disant 'Il va nous sauver! Il va nous sauver!' et au final ils disent non! Tu devrais le savoir à la longue que les humains veulent pas nous aider! Allez, ramène-le chez lui, avant qu'il soit traumatisé.\n\n";
@@ -157,6 +181,7 @@ int main() {
   } 
   
   // Embranchement B
+  
   else if (choix1 == 2) {
       std::cout << "Vous rentrez précipitamment chez vous pour aller chercher votre soeur. Après 30 minutes à essayer de la convaincre de revenir au lycée après les cours, elle accepte finalement. Armés de vos lampes torches, vous rentrez discrètement dans le lycée. Vous apercevez la porte au loin.\n\n";
       std::cout << "Tiens regarde, c'est celle-là.\n\n";
@@ -183,7 +208,9 @@ int main() {
 
       std::cin >> choix2b;
       }
-
+    
+      // Choix 2 : réponse 1
+    
       if (choix2b == 1) {
         std::cout << "Tous les robots sautent de joie. Ils vous soulèvent tous les deux comme des stars du foot qui viennent de marquer un but, et vous emmènenent dans une sorte d'armurerie. Sur le mur, il y a deux combinaisons futuristes bleues, une pour garçon et une pour fille - comme par hasard - accompagnées toutes les deux d'une épée.\n\n";
         std::cout << "Voici votre équipement! - dit le robot bleu - Je vous en prie, enfilez-le!\n\n";
@@ -207,6 +234,8 @@ int main() {
         std::cin >> choix3b;
         }
 
+        // Choix 3 : réponse 1
+        
         if (choix3b == 1) {
         std::cout << "Bha, après tout ça peut être marrant.\n\n";
         std::cout << "Pendant qu'elle essaye de repousser les robots lourdeaux, vous lui faites une tape sur l'épaule.\n\n";
@@ -226,6 +255,8 @@ int main() {
         std::cin >> choix4b;
         }
 
+        // Choix 4 : réponse 1
+          
         if (choix4b == 1) {
         std::cout << "Comme il fait vraiment pitié, vous décidez de l'épargner. Vous rangez tous les deux votre épée, et revenez vers la ville tout fiers pour raconter vos exploits. Vous vous tournez vers Mayu.\n\n";
         std::cout << "Alors, c'était une bonne idée cette excursion, n...?\n\n";
@@ -238,6 +269,8 @@ int main() {
         std::cout << "FIN 8: C'était vraiement pas une bonne idée...\n";
         return 0;
 
+        // Choix 4 : réponse 2
+          
         } else if (choix4b == 2) {
         std::cout << "Vous vous regardez un instant dans les yeux, avant de transpercer son coeur à l'unisson. Le robot explosa en une pluie de confettis. Après un high five et un bref instant à profiter des confettis, vous vous dirigez tous les deux vers la ville pour raconter vos exploits. Là-bas, vous êtes tous les deux accueillis comme des héros. Les robots vous soulèvent tous les deux comme des prophètes qui viennent de réaliser un miracle, en vous arrosant de serpentins et de ce qui semble être du champagne.\n";
         std::cout << "Après vous avoir baladés comme ça dans toute la ville, les robots vous emmènent dans la tour principale et se rendent dans une salle, dans laquelle se trouve quelque chose qui ressemble à un téléporteur. Ils vous posent tous les deux, et se réunissent devant vous.\n\n";
@@ -255,6 +288,8 @@ int main() {
         std::cout << "L'histoire n'avançera pas si vous ne vous décidez pas. Faites votre choix.\n";
         }
 
+         // Choix 3 : réponse 2
+          
         } else if (choix3b == 2) {
           std::cout << "Jugeant la situation trop dangereuse, vous décidez de ne pas emmener Mayu avec vous pour cette bataille. Pendant qu'elle essaye de repousser les robots lourdeaux, vous en profitez pour vous eclipser en douce. Mayu s'en rend compte mais trop tard, vous êtes déjà loin. Alors que vous vous avancez seul sur le champ de bataille, vous pouvez l'entendre vous appeler au loin, mais vous ne répondez pas.\n";
           std::cout << "Vous brandissez fièrement votre épée vers l'armée des robots. Mais il y a un problème...Vous n'avez pas prévu qu'il y en ait autant. Vous vous battez de toute votre force pour essayer de les arrêter, mais rien à faire, ils sont trop nombreux. A chaque fois que vous en tuez un, deux autres se ramènent. Vos forces vous abandonnent petit à petit, et vous voilà maintenant encerclé. Les robots se jettent alors sur vous et vous déchiquettent, sous le regard choqué de votre soeur, qui voit tout depuis la fenêtre de la tour.\n";
@@ -268,6 +303,8 @@ int main() {
         }
 
 
+        // Choix 2 : réponse 2
+        
       } else if (choix2b == 2) {
       std::cout << "Les robots restent là comme des teubés, comme s'ils avaient mal entendu. Quand ils comprennent que vous avez bien dit non, ils se mettent tous à pleurer. Vous et Mayu restez impassibles face à ce spectacle larmoyant.\n\n";
       std::cout << "Vous êtes sûrs?... - demande le robot bleu.\n\n";
@@ -289,6 +326,7 @@ int main() {
   } 
   
   // Embranchement C
+  
   else if (choix1 == 3) {
     std::cout << "Impassible face à ce spectacle, vous continuez votre chemin et rentrez chez vous. Après avoir essayé de faire vos devoirs et échoué, regarder 20 minutes de programmes inintéressants à la télé, et avoir mangé un repas à base de restes, vous vous mettez au lit, comme tous les soirs, en pensant que la journée suivante sera exactement comme les autres : nulle.\n\n";
 
